@@ -1,0 +1,20 @@
+<div class="first-task">
+  <h1>Task 1</h1>
+  <mat-form-field class="input-field">
+    <input name="input" matInput placeholder="Input" [(ngModel)]="text">
+  </mat-form-field>
+  <br>
+  <label *ngIf="text === ''">Write something in the input field to change this label</label>
+  <label *ngIf="text !== ''">{{text}}</label>
+</div>
+
+<div class="second-task">
+  <h1>Task 2</h1>
+  <mat-tab-group>
+    <mat-tab label="First Tab">First page</mat-tab>
+    <mat-tab label="Second Tab">Second page</mat-tab>
+  </mat-tab-group>
+</div>
+
+
+
